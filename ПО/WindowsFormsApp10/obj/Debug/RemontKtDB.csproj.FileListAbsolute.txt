@@ -1,0 +1,109 @@
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\bin\Debug\RemontKt.exe.config
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\bin\Debug\RemontKt.exe
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\bin\Debug\RemontKt.pdb
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditPostForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.PostsForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Properties.Resources.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKtDB.csproj.GenerateResource.cache
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKtDB.csproj.CopyComplete
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.exe
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.pdb
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditFaultTypeForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditManufacturerForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditParameterForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditTechnicForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditTechnicTypeForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditWorkForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditSpareTypeForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditStatusForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.MainForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.ParametersForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.FaultTypesForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.ManufacturersForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.TechnicsForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.TechnicTypesForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.WorksForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.SpareTypesForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.StatusesForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditTechnicParameterForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.TechnicParametersForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditEmployeeForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.MainForms.EmployeesForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditClientForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.MainForms.ClientsForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditSpareForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.MainForms.SparesForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditSpareParameterForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.MainForms.SpareParametersForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditRequestForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.LoginForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditRequestWorkForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.MainForms.RequestWorksForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.Reports.RequestWorksForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.Reports.RequestReportForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.Reports.SpareReportForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.Reports.RequestByFaultTypeReportForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKt.Forms.Reports.RequestByTechnicTypeReportForm.resources
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKtDB.csprojAssemblyReference.cache
+C:\Users\User\Desktop\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\RemontKtDB.csproj.CoreCompileInputs.cache
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\bin\Debug\RemontKt.exe.config
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\bin\Debug\RemontKt.exe
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\bin\Debug\RemontKt.pdb
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\bin\Debug\EntityFramework.dll
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\bin\Debug\EntityFramework.xml
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKtDB.csproj.AssemblyReference.cache
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKtDB.csproj.SuggestedBindingRedirects.cache
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditClientForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditFaultTypeForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditManufacturerForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditParameterForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditEmployeeForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditRequestWorkForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditRequestForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditSpareParameterForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditSpareForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditTechnicParameterForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditTechnicForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditTechnicTypeForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditWorkForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditSpareTypeForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditStatusForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.AddEditForms.AddEditPostForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.LoginForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.MainForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.MainForms.ClientsForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.MainForms.EmployeesForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.MainForms.RequestWorksForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.MainForms.SpareParametersForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.MainForms.SparesForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.ParametersForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.FaultTypesForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.ManufacturersForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.TechnicParametersForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.TechnicsForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.TechnicTypesForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.WorksForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.SpareTypesForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.StatusesForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.ReferenceForms.PostsForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.Reports.RequestByTechnicTypeReportForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.Reports.RequestByFaultTypeReportForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.Reports.RequestReportForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.Reports.SpareReportForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Forms.Reports.RequestWorksForm.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.Properties.Resources.resources
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKtDB.csproj.GenerateResource.cache
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKtDB.csproj.CoreCompileInputs.cache
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKtDB.csproj.CopyComplete
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.exe
+C:\Users\79618\Downloads\120170025_156016 (1)\1.Программа\исходники\Проект в VS 2019\WindowsFormsApp10\obj\Debug\RemontKt.pdb

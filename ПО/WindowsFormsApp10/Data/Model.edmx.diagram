@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="68513f97d2ac42a782598da95ccba390" Name="Diagram1">
+        <EntityTypeShape EntityType="RemontDBModel.Client" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="RemontDBModel.Employee" Width="1.5" PointX="3" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RemontDBModel.FaultType" Width="1.5" PointX="3" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RemontDBModel.Manufacturer" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RemontDBModel.Parameter" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RemontDBModel.Post" Width="1.5" PointX="0.75" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RemontDBModel.Request" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RemontDBModel.RequestWork" Width="1.5" PointX="7.5" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RemontDBModel.Spare" Width="1.5" PointX="5.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RemontDBModel.SpareParameter" Width="1.5" PointX="7.5" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RemontDBModel.SpareType" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RemontDBModel.Status" Width="1.5" PointX="3" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RemontDBModel.Technic" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RemontDBModel.TechnicParameter" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RemontDBModel.TechnicType" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RemontDBModel.Work" Width="1.5" PointX="5.25" PointY="12.625" IsExpanded="true" />
+        <AssociationConnector Association="RemontDBModel.FK_REQUEST_REFERENCE_CLIENT" ManuallyRouted="false" />
+        <AssociationConnector Association="RemontDBModel.FK_EMPLOYEE_REFERENCE_POST" ManuallyRouted="false" />
+        <AssociationConnector Association="RemontDBModel.FK_REQUEST_REFERENCE_EMPLOYEE" ManuallyRouted="false" />
+        <AssociationConnector Association="RemontDBModel.FK_REQUESTW_REFERENCE_EMPLOYEE" ManuallyRouted="false" />
+        <AssociationConnector Association="RemontDBModel.FK_REQUEST_REFERENCE_FAULTTYP" ManuallyRouted="false" />
+        <AssociationConnector Association="RemontDBModel.FK_TECHNIC_REFERENCE_MANUFACT" ManuallyRouted="false" />
+        <AssociationConnector Association="RemontDBModel.FK_TECHNICP_REFERENCE_PARAMETE" ManuallyRouted="false" />
+        <AssociationConnector Association="RemontDBModel.FK_REQUEST_REFERENCE_STATUS" ManuallyRouted="false" />
+        <AssociationConnector Association="RemontDBModel.FK_REQUEST_REFERENCE_TECHNIC" ManuallyRouted="false" />
+        <AssociationConnector Association="RemontDBModel.FK_REQUESTW_REFERENCE_REQUEST" ManuallyRouted="false" />
+        <AssociationConnector Association="RemontDBModel.FK_REQUESTW_REFERENCE_SPARE" ManuallyRouted="false" />
+        <AssociationConnector Association="RemontDBModel.FK_REQUESTW_REFERENCE_WORK" ManuallyRouted="false" />
+        <AssociationConnector Association="RemontDBModel.FK_SPARE_REFERENCE_SPARETYP" ManuallyRouted="false" />
+        <AssociationConnector Association="RemontDBModel.FK_SPAREPAR_REFERENCE_SPARE" ManuallyRouted="false" />
+        <AssociationConnector Association="RemontDBModel.FK_SPARETYP_REFERENCE_TECHNICT" ManuallyRouted="false" />
+        <AssociationConnector Association="RemontDBModel.FK_TECHNIC_REFERENCE_TECHNICT" ManuallyRouted="false" />
+        <AssociationConnector Association="RemontDBModel.FK_TECHNICP_REFERENCE_TECHNIC" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

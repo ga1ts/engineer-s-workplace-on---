@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище RemontDBModelContainer" CdmEntityContainer="RemontDBEntities">
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="RemontDBModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="Client_ID" ColumnName="Client_ID" />
+          <ScalarProperty Name="FName" ColumnName="FName" />
+          <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Passport" ColumnName="Passport" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="RemontDBModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+          <ScalarProperty Name="Post_ID" ColumnName="Post_ID" />
+          <ScalarProperty Name="FName" ColumnName="FName" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FaultTypes">
+      <EntityTypeMapping TypeName="RemontDBModel.FaultType">
+        <MappingFragment StoreEntitySet="FaultType">
+          <ScalarProperty Name="FaultType_ID" ColumnName="FaultType_ID" />
+          <ScalarProperty Name="FaultTypeName" ColumnName="FaultTypeName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Manufacturers">
+      <EntityTypeMapping TypeName="RemontDBModel.Manufacturer">
+        <MappingFragment StoreEntitySet="Manufacturer">
+          <ScalarProperty Name="Manufacturer_ID" ColumnName="Manufacturer_ID" />
+          <ScalarProperty Name="ManufacturerName" ColumnName="ManufacturerName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parameters">
+      <EntityTypeMapping TypeName="RemontDBModel.Parameter">
+        <MappingFragment StoreEntitySet="Parameter">
+          <ScalarProperty Name="Parameter_ID" ColumnName="Parameter_ID" />
+          <ScalarProperty Name="ParameterName" ColumnName="ParameterName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Posts">
+      <EntityTypeMapping TypeName="RemontDBModel.Post">
+        <MappingFragment StoreEntitySet="Post">
+          <ScalarProperty Name="Post_ID" ColumnName="Post_ID" />
+          <ScalarProperty Name="PostName" ColumnName="PostName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Requests">
+      <EntityTypeMapping TypeName="RemontDBModel.Request">
+        <MappingFragment StoreEntitySet="Request">
+          <ScalarProperty Name="ExecutionDt" ColumnName="ExecutionDt" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Request_ID" ColumnName="Request_ID" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="FaultType_ID" ColumnName="FaultType_ID" />
+          <ScalarProperty Name="Technic_ID" ColumnName="Technic_ID" />
+          <ScalarProperty Name="Client_ID" ColumnName="Client_ID" />
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+          <ScalarProperty Name="RequestDt" ColumnName="RequestDt" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequestWorks">
+      <EntityTypeMapping TypeName="RemontDBModel.RequestWork">
+        <MappingFragment StoreEntitySet="RequestWork">
+          <ScalarProperty Name="RequestWork_ID" ColumnName="RequestWork_ID" />
+          <ScalarProperty Name="Request_ID" ColumnName="Request_ID" />
+          <ScalarProperty Name="Work_ID" ColumnName="Work_ID" />
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+          <ScalarProperty Name="Spare_ID" ColumnName="Spare_ID" />
+          <ScalarProperty Name="RequestWorkDt" ColumnName="RequestWorkDt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Spares">
+      <EntityTypeMapping TypeName="RemontDBModel.Spare">
+        <MappingFragment StoreEntitySet="Spare">
+          <ScalarProperty Name="Spare_ID" ColumnName="Spare_ID" />
+          <ScalarProperty Name="SpareType_ID" ColumnName="SpareType_ID" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="SpareName" ColumnName="SpareName" />
+          <ScalarProperty Name="Article" ColumnName="Article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SpareParameters">
+      <EntityTypeMapping TypeName="RemontDBModel.SpareParameter">
+        <MappingFragment StoreEntitySet="SpareParameter">
+          <ScalarProperty Name="SpareParameter_ID" ColumnName="SpareParameter_ID" />
+          <ScalarProperty Name="Spare_ID" ColumnName="Spare_ID" />
+          <ScalarProperty Name="Parameter" ColumnName="Parameter" />
+          <ScalarProperty Name="ParameterVakue" ColumnName="ParameterVakue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SpareTypes">
+      <EntityTypeMapping TypeName="RemontDBModel.SpareType">
+        <MappingFragment StoreEntitySet="SpareType">
+          <ScalarProperty Name="SpareType_ID" ColumnName="SpareType_ID" />
+          <ScalarProperty Name="TechnicType_ID" ColumnName="TechnicType_ID" />
+          <ScalarProperty Name="SpareTypeName" ColumnName="SpareTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="RemontDBModel.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Technics">
+      <EntityTypeMapping TypeName="RemontDBModel.Technic">
+        <MappingFragment StoreEntitySet="Technic">
+          <ScalarProperty Name="Technic_ID" ColumnName="Technic_ID" />
+          <ScalarProperty Name="Manufacturer_ID" ColumnName="Manufacturer_ID" />
+          <ScalarProperty Name="TechnicType_ID" ColumnName="TechnicType_ID" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TechnicParameters">
+      <EntityTypeMapping TypeName="RemontDBModel.TechnicParameter">
+        <MappingFragment StoreEntitySet="TechnicParameter">
+          <ScalarProperty Name="TechnicParameter_ID" ColumnName="TechnicParameter_ID" />
+          <ScalarProperty Name="Technic_ID" ColumnName="Technic_ID" />
+          <ScalarProperty Name="Parameter_ID" ColumnName="Parameter_ID" />
+          <ScalarProperty Name="ParameterValue" ColumnName="ParameterValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TechnicTypes">
+      <EntityTypeMapping TypeName="RemontDBModel.TechnicType">
+        <MappingFragment StoreEntitySet="TechnicType">
+          <ScalarProperty Name="TechnicType_ID" ColumnName="TechnicType_ID" />
+          <ScalarProperty Name="TechnicTypeName" ColumnName="TechnicTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Works">
+      <EntityTypeMapping TypeName="RemontDBModel.Work">
+        <MappingFragment StoreEntitySet="Work">
+          <ScalarProperty Name="Work_ID" ColumnName="Work_ID" />
+          <ScalarProperty Name="WorkName" ColumnName="WorkName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

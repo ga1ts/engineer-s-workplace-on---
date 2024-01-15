@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B59A8A0-2CCA-4848-9621-C09A6B209BCD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RemontKt</RootNamespace>
+    <AssemblyName>RemontKt</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Client.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Employee.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ExceptionHandler.cs" />
+    <Compile Include="Data\FaultType.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Manufacturer.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Parameter.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PartialClass\Manufacturer.cs" />
+    <Compile Include="Data\PartialClass\Parameter.cs" />
+    <Compile Include="Data\PartialClass\FaultType.cs" />
+    <Compile Include="Data\PartialClass\Client.cs" />
+    <Compile Include="Data\PartialClass\Employee.cs" />
+    <Compile Include="Data\PartialClass\RequestByTechnicType.cs" />
+    <Compile Include="Data\PartialClass\RequestByFaultType.cs" />
+    <Compile Include="Data\PartialClass\Work.cs" />
+    <Compile Include="Data\PartialClass\RequestWork.cs" />
+    <Compile Include="Data\PartialClass\Status.cs" />
+    <Compile Include="Data\PartialClass\Request.cs" />
+    <Compile Include="Data\PartialClass\Spare.cs" />
+    <Compile Include="Data\PartialClass\SpareType.cs" />
+    <Compile Include="Data\PartialClass\Technic.cs" />
+    <Compile Include="Data\PartialClass\TechnicType.cs" />
+    <Compile Include="Data\PartialClass\Post.cs" />
+    <Compile Include="Data\Post.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Repository.cs" />
+    <Compile Include="Data\Request.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\RequestWork.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Spare.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SpareParameter.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SpareType.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Status.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Technic.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TechnicParameter.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TechnicType.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Work.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Export\ExportToWord.cs" />
+    <Compile Include="Forms\AddEditForms\AddEditClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditClientForm.designer.cs">
+      <DependentUpon>AddEditClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditFaultTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditFaultTypeForm.designer.cs">
+      <DependentUpon>AddEditFaultTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditManufacturerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditManufacturerForm.designer.cs">
+      <DependentUpon>AddEditManufacturerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditParameterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditParameterForm.designer.cs">
+      <DependentUpon>AddEditParameterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditEmployeeForm.designer.cs">
+      <DependentUpon>AddEditEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditRequestWorkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditRequestWorkForm.designer.cs">
+      <DependentUpon>AddEditRequestWorkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditRequestForm.designer.cs">
+      <DependentUpon>AddEditRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditSpareParameterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditSpareParameterForm.designer.cs">
+      <DependentUpon>AddEditSpareParameterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditSpareForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditSpareForm.designer.cs">
+      <DependentUpon>AddEditSpareForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditTechnicParameterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditTechnicParameterForm.designer.cs">
+      <DependentUpon>AddEditTechnicParameterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditTechnicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditTechnicForm.designer.cs">
+      <DependentUpon>AddEditTechnicForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditTechnicTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditTechnicTypeForm.designer.cs">
+      <DependentUpon>AddEditTechnicTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditWorkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditWorkForm.designer.cs">
+      <DependentUpon>AddEditWorkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditSpareTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditSpareTypeForm.designer.cs">
+      <DependentUpon>AddEditSpareTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditStatusForm.designer.cs">
+      <DependentUpon>AddEditStatusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditPostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditForms\AddEditPostForm.designer.cs">
+      <DependentUpon>AddEditPostForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForms\ClientsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForms\ClientsForm.designer.cs">
+      <DependentUpon>ClientsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForms\EmployeesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForms\EmployeesForm.designer.cs">
+      <DependentUpon>EmployeesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForms\RequestWorksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForms\RequestWorksForm.designer.cs">
+      <DependentUpon>RequestWorksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForms\SpareParametersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForms\SpareParametersForm.designer.cs">
+      <DependentUpon>SpareParametersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForms\SparesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForms\SparesForm.designer.cs">
+      <DependentUpon>SparesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\ParametersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\ParametersForm.designer.cs">
+      <DependentUpon>ParametersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\FaultTypesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\FaultTypesForm.designer.cs">
+      <DependentUpon>FaultTypesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\ManufacturersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\ManufacturersForm.designer.cs">
+      <DependentUpon>ManufacturersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\TechnicParametersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\TechnicParametersForm.designer.cs">
+      <DependentUpon>TechnicParametersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\TechnicsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\TechnicsForm.designer.cs">
+      <DependentUpon>TechnicsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\TechnicTypesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\TechnicTypesForm.designer.cs">
+      <DependentUpon>TechnicTypesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\WorksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\WorksForm.designer.cs">
+      <DependentUpon>WorksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\SpareTypesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\SpareTypesForm.designer.cs">
+      <DependentUpon>SpareTypesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\StatusesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\StatusesForm.designer.cs">
+      <DependentUpon>StatusesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\PostsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReferenceForms\PostsForm.designer.cs">
+      <DependentUpon>PostsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\RequestByTechnicTypeReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\RequestByTechnicTypeReportForm.designer.cs">
+      <DependentUpon>RequestByTechnicTypeReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\RequestByFaultTypeReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\RequestByFaultTypeReportForm.designer.cs">
+      <DependentUpon>RequestByFaultTypeReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\RequestReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\RequestReportForm.designer.cs">
+      <DependentUpon>RequestReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\SpareReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\SpareReportForm.designer.cs">
+      <DependentUpon>SpareReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\RequestWorksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\RequestWorksForm.designer.cs">
+      <DependentUpon>RequestWorksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AddEditForms\AddEditClientForm.resx">
+      <DependentUpon>AddEditClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditForms\AddEditFaultTypeForm.resx">
+      <DependentUpon>AddEditFaultTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditForms\AddEditManufacturerForm.resx">
+      <DependentUpon>AddEditManufacturerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditForms\AddEditParameterForm.resx">
+      <DependentUpon>AddEditParameterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditForms\AddEditEmployeeForm.resx">
+      <DependentUpon>AddEditEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditForms\AddEditRequestWorkForm.resx">
+      <DependentUpon>AddEditRequestWorkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditForms\AddEditRequestForm.resx">
+      <DependentUpon>AddEditRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditForms\AddEditSpareParameterForm.resx">
+      <DependentUpon>AddEditSpareParameterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditForms\AddEditSpareForm.resx">
+      <DependentUpon>AddEditSpareForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditForms\AddEditTechnicParameterForm.resx">
+      <DependentUpon>AddEditTechnicParameterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditForms\AddEditTechnicForm.resx">
+      <DependentUpon>AddEditTechnicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditForms\AddEditTechnicTypeForm.resx">
+      <DependentUpon>AddEditTechnicTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditForms\AddEditWorkForm.resx">
+      <DependentUpon>AddEditWorkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditForms\AddEditSpareTypeForm.resx">
+      <DependentUpon>AddEditSpareTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditForms\AddEditStatusForm.resx">
+      <DependentUpon>AddEditStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditForms\AddEditPostForm.resx">
+      <DependentUpon>AddEditPostForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForms\ClientsForm.resx">
+      <DependentUpon>ClientsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForms\EmployeesForm.resx">
+      <DependentUpon>EmployeesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForms\RequestWorksForm.resx">
+      <DependentUpon>RequestWorksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForms\SpareParametersForm.resx">
+      <DependentUpon>SpareParametersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForms\SparesForm.resx">
+      <DependentUpon>SparesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReferenceForms\ParametersForm.resx">
+      <DependentUpon>ParametersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReferenceForms\FaultTypesForm.resx">
+      <DependentUpon>FaultTypesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReferenceForms\ManufacturersForm.resx">
+      <DependentUpon>ManufacturersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReferenceForms\TechnicParametersForm.resx">
+      <DependentUpon>TechnicParametersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReferenceForms\TechnicsForm.resx">
+      <DependentUpon>TechnicsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReferenceForms\TechnicTypesForm.resx">
+      <DependentUpon>TechnicTypesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReferenceForms\WorksForm.resx">
+      <DependentUpon>WorksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReferenceForms\SpareTypesForm.resx">
+      <DependentUpon>SpareTypesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReferenceForms\StatusesForm.resx">
+      <DependentUpon>StatusesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReferenceForms\PostsForm.resx">
+      <DependentUpon>PostsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\RequestByTechnicTypeReportForm.resx">
+      <DependentUpon>RequestByTechnicTypeReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\RequestByFaultTypeReportForm.resx">
+      <DependentUpon>RequestByFaultTypeReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\RequestReportForm.resx">
+      <DependentUpon>RequestReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\SpareReportForm.resx">
+      <DependentUpon>SpareReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\RequestWorksForm.resx">
+      <DependentUpon>RequestWorksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EntityDeploy Include="Data\Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ClassDiagram.cd" />
+    <None Include="Data\Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\RemontKt.Data.Client.datasource" />
+    <None Include="Properties\DataSources\RemontKt.Data.Employee.datasource" />
+    <None Include="Properties\DataSources\RemontKt.Data.Manufacturer.datasource" />
+    <None Include="Properties\DataSources\RemontKt.Data.Post.datasource" />
+    <None Include="Properties\DataSources\RemontKt.Data.Request.datasource" />
+    <None Include="Properties\DataSources\RemontKt.Data.RequestByFaultType.datasource" />
+    <None Include="Properties\DataSources\RemontKt.Data.RequestByTechnicType.datasource" />
+    <None Include="Properties\DataSources\RemontKt.Data.RequestWork.datasource" />
+    <None Include="Properties\DataSources\RemontKt.Data.Spare.datasource" />
+    <None Include="Properties\DataSources\RemontKt.Data.SpareParameter.datasource" />
+    <None Include="Properties\DataSources\RemontKt.Data.TechnicParameter.datasource" />
+    <None Include="Properties\DataSources\RemontKt.Data.TechnicType.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Data\Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\description.png" />
+    <None Include="Resources\word_16.png" />
+    <None Include="Resources\iconfinder_manilla-document-open_23455.png" />
+    <None Include="Resources\iconfinder_logo_brand_brands_logos_word_29936641.png" />
+    <None Include="Resources\referenceData.png" />
+    <None Include="Resources\iconfinder_system-users_118828.png" />
+    <None Include="Resources\iconfinder_People_22163.png" />
+    <None Include="Resources\iconfinder_logo_brand_brands_logos_word_2993664.png" />
+    <None Include="Resources\tool.png" />
+    <None Include="Resources\params.png" />
+    <None Include="Resources\iconfinder_category_103432.png" />
+    <None Include="Resources\return_24.png" />
+    <None Include="Resources\search_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Configure_22139.png" />
+    <None Include="Resources\edit_16.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\add_btn.png" />
+    <None Include="Resources\delete_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

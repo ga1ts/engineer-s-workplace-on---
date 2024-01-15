@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище RemontDBModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="Client_ID" />
+    </Key>
+    <Property Name="Client_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ClientName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Passport" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Employee_ID" />
+    </Key>
+    <Property Name="Employee_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Post_ID" Type="int" Nullable="false" />
+    <Property Name="FName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="EmpName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LName" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Login" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FaultType">
+    <Key>
+      <PropertyRef Name="FaultType_ID" />
+    </Key>
+    <Property Name="FaultType_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FaultTypeName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="Manufacturer">
+    <Key>
+      <PropertyRef Name="Manufacturer_ID" />
+    </Key>
+    <Property Name="Manufacturer_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ManufacturerName" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Parameter">
+    <Key>
+      <PropertyRef Name="Parameter_ID" />
+    </Key>
+    <Property Name="Parameter_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParameterName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="Post">
+    <Key>
+      <PropertyRef Name="Post_ID" />
+    </Key>
+    <Property Name="Post_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PostName" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Request">
+    <Key>
+      <PropertyRef Name="Request_ID" />
+    </Key>
+    <Property Name="Request_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Status_ID" Type="int" Nullable="false" />
+    <Property Name="FaultType_ID" Type="int" Nullable="false" />
+    <Property Name="Technic_ID" Type="int" Nullable="false" />
+    <Property Name="Client_ID" Type="int" Nullable="false" />
+    <Property Name="Employee_ID" Type="int" Nullable="false" />
+    <Property Name="RequestDt" Type="datetime" Nullable="false" />
+    <Property Name="SerialNumber" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="ExecutionDt" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RequestWork">
+    <Key>
+      <PropertyRef Name="RequestWork_ID" />
+    </Key>
+    <Property Name="RequestWork_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Request_ID" Type="int" Nullable="false" />
+    <Property Name="Work_ID" Type="int" Nullable="false" />
+    <Property Name="Employee_ID" Type="int" Nullable="false" />
+    <Property Name="Spare_ID" Type="int" />
+    <Property Name="RequestWorkDt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Spare">
+    <Key>
+      <PropertyRef Name="Spare_ID" />
+    </Key>
+    <Property Name="Spare_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SpareType_ID" Type="int" Nullable="false" />
+    <Property Name="Price" Type="money" Nullable="false" />
+    <Property Name="SpareName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Article" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SpareParameter">
+    <Key>
+      <PropertyRef Name="SpareParameter_ID" />
+    </Key>
+    <Property Name="SpareParameter_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Spare_ID" Type="int" Nullable="false" />
+    <Property Name="Parameter" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ParameterVakue" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SpareType">
+    <Key>
+      <PropertyRef Name="SpareType_ID" />
+    </Key>
+    <Property Name="SpareType_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TechnicType_ID" Type="int" Nullable="false" />
+    <Property Name="SpareTypeName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="Status_ID" />
+    </Key>
+    <Property Name="Status_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StatusName" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Technic">
+    <Key>
+      <PropertyRef Name="Technic_ID" />
+    </Key>
+    <Property Name="Technic_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Manufacturer_ID" Type="int" Nullable="false" />
+    <Property Name="TechnicType_ID" Type="int" Nullable="false" />
+    <Property Name="Model" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TechnicParameter">
+    <Key>
+      <PropertyRef Name="TechnicParameter_ID" />
+    </Key>
+    <Property Name="TechnicParameter_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Technic_ID" Type="int" Nullable="false" />
+    <Property Name="Parameter_ID" Type="int" Nullable="false" />
+    <Property Name="ParameterValue" Type="varchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TechnicType">
+    <Key>
+      <PropertyRef Name="TechnicType_ID" />
+    </Key>
+    <Property Name="TechnicType_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TechnicTypeName" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Work">
+    <Key>
+      <PropertyRef Name="Work_ID" />
+    </Key>
+    <Property Name="Work_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WorkName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="1000" />
+    <Property Name="Price" Type="money" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_EMPLOYEE_REFERENCE_POST">
+    <End Role="Post" Type="Self.Post" Multiplicity="1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Post">
+        <PropertyRef Name="Post_ID" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="Post_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REQUEST_REFERENCE_CLIENT">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Request" Type="Self.Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="Client_ID" />
+      </Principal>
+      <Dependent Role="Request">
+        <PropertyRef Name="Client_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REQUEST_REFERENCE_EMPLOYEE">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+    <End Role="Request" Type="Self.Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="Employee_ID" />
+      </Principal>
+      <Dependent Role="Request">
+        <PropertyRef Name="Employee_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REQUEST_REFERENCE_FAULTTYP">
+    <End Role="FaultType" Type="Self.FaultType" Multiplicity="1" />
+    <End Role="Request" Type="Self.Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FaultType">
+        <PropertyRef Name="FaultType_ID" />
+      </Principal>
+      <Dependent Role="Request">
+        <PropertyRef Name="FaultType_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REQUEST_REFERENCE_STATUS">
+    <End Role="Status" Type="Self.Status" Multiplicity="1" />
+    <End Role="Request" Type="Self.Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="Status_ID" />
+      </Principal>
+      <Dependent Role="Request">
+        <PropertyRef Name="Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REQUEST_REFERENCE_TECHNIC">
+    <End Role="Technic" Type="Self.Technic" Multiplicity="1" />
+    <End Role="Request" Type="Self.Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Technic">
+        <PropertyRef Name="Technic_ID" />
+      </Principal>
+      <Dependent Role="Request">
+        <PropertyRef Name="Technic_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REQUESTW_REFERENCE_EMPLOYEE">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+    <End Role="RequestWork" Type="Self.RequestWork" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="Employee_ID" />
+      </Principal>
+      <Dependent Role="RequestWork">
+        <PropertyRef Name="Employee_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REQUESTW_REFERENCE_REQUEST">
+    <End Role="Request" Type="Self.Request" Multiplicity="1" />
+    <End Role="RequestWork" Type="Self.RequestWork" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Request">
+        <PropertyRef Name="Request_ID" />
+      </Principal>
+      <Dependent Role="RequestWork">
+        <PropertyRef Name="Request_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REQUESTW_REFERENCE_SPARE">
+    <End Role="Spare" Type="Self.Spare" Multiplicity="0..1" />
+    <End Role="RequestWork" Type="Self.RequestWork" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Spare">
+        <PropertyRef Name="Spare_ID" />
+      </Principal>
+      <Dependent Role="RequestWork">
+        <PropertyRef Name="Spare_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REQUESTW_REFERENCE_WORK">
+    <End Role="Work" Type="Self.Work" Multiplicity="1" />
+    <End Role="RequestWork" Type="Self.RequestWork" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Work">
+        <PropertyRef Name="Work_ID" />
+      </Principal>
+      <Dependent Role="RequestWork">
+        <PropertyRef Name="Work_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SPARE_REFERENCE_SPARETYP">
+    <End Role="SpareType" Type="Self.SpareType" Multiplicity="1" />
+    <End Role="Spare" Type="Self.Spare" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SpareType">
+        <PropertyRef Name="SpareType_ID" />
+      </Principal>
+      <Dependent Role="Spare">
+        <PropertyRef Name="SpareType_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SPAREPAR_REFERENCE_SPARE">
+    <End Role="Spare" Type="Self.Spare" Multiplicity="1" />
+    <End Role="SpareParameter" Type="Self.SpareParameter" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Spare">
+        <PropertyRef Name="Spare_ID" />
+      </Principal>
+      <Dependent Role="SpareParameter">
+        <PropertyRef Name="Spare_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SPARETYP_REFERENCE_TECHNICT">
+    <End Role="TechnicType" Type="Self.TechnicType" Multiplicity="1" />
+    <End Role="SpareType" Type="Self.SpareType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TechnicType">
+        <PropertyRef Name="TechnicType_ID" />
+      </Principal>
+      <Dependent Role="SpareType">
+        <PropertyRef Name="TechnicType_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TECHNIC_REFERENCE_MANUFACT">
+    <End Role="Manufacturer" Type="Self.Manufacturer" Multiplicity="1" />
+    <End Role="Technic" Type="Self.Technic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Manufacturer">
+        <PropertyRef Name="Manufacturer_ID" />
+      </Principal>
+      <Dependent Role="Technic">
+        <PropertyRef Name="Manufacturer_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TECHNIC_REFERENCE_TECHNICT">
+    <End Role="TechnicType" Type="Self.TechnicType" Multiplicity="1" />
+    <End Role="Technic" Type="Self.Technic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TechnicType">
+        <PropertyRef Name="TechnicType_ID" />
+      </Principal>
+      <Dependent Role="Technic">
+        <PropertyRef Name="TechnicType_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TECHNICP_REFERENCE_PARAMETE">
+    <End Role="Parameter" Type="Self.Parameter" Multiplicity="1" />
+    <End Role="TechnicParameter" Type="Self.TechnicParameter" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Parameter">
+        <PropertyRef Name="Parameter_ID" />
+      </Principal>
+      <Dependent Role="TechnicParameter">
+        <PropertyRef Name="Parameter_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TECHNICP_REFERENCE_TECHNIC">
+    <End Role="Technic" Type="Self.Technic" Multiplicity="1" />
+    <End Role="TechnicParameter" Type="Self.TechnicParameter" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Technic">
+        <PropertyRef Name="Technic_ID" />
+      </Principal>
+      <Dependent Role="TechnicParameter">
+        <PropertyRef Name="Technic_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище RemontDBModelContainer">
+    <EntitySet Name="Client" EntityType="Self.Client" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FaultType" EntityType="Self.FaultType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Manufacturer" EntityType="Self.Manufacturer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Parameter" EntityType="Self.Parameter" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Post" EntityType="Self.Post" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Request" EntityType="Self.Request" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RequestWork" EntityType="Self.RequestWork" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Spare" EntityType="Self.Spare" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SpareParameter" EntityType="Self.SpareParameter" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SpareType" EntityType="Self.SpareType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Technic" EntityType="Self.Technic" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TechnicParameter" EntityType="Self.TechnicParameter" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TechnicType" EntityType="Self.TechnicType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Work" EntityType="Self.Work" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_EMPLOYEE_REFERENCE_POST" Association="Self.FK_EMPLOYEE_REFERENCE_POST">
+      <End Role="Post" EntitySet="Post" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REQUEST_REFERENCE_CLIENT" Association="Self.FK_REQUEST_REFERENCE_CLIENT">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Request" EntitySet="Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REQUEST_REFERENCE_EMPLOYEE" Association="Self.FK_REQUEST_REFERENCE_EMPLOYEE">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Request" EntitySet="Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REQUEST_REFERENCE_FAULTTYP" Association="Self.FK_REQUEST_REFERENCE_FAULTTYP">
+      <End Role="FaultType" EntitySet="FaultType" />
+      <End Role="Request" EntitySet="Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REQUEST_REFERENCE_STATUS" Association="Self.FK_REQUEST_REFERENCE_STATUS">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="Request" EntitySet="Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REQUEST_REFERENCE_TECHNIC" Association="Self.FK_REQUEST_REFERENCE_TECHNIC">
+      <End Role="Technic" EntitySet="Technic" />
+      <End Role="Request" EntitySet="Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REQUESTW_REFERENCE_EMPLOYEE" Association="Self.FK_REQUESTW_REFERENCE_EMPLOYEE">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="RequestWork" EntitySet="RequestWork" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REQUESTW_REFERENCE_REQUEST" Association="Self.FK_REQUESTW_REFERENCE_REQUEST">
+      <End Role="Request" EntitySet="Request" />
+      <End Role="RequestWork" EntitySet="RequestWork" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REQUESTW_REFERENCE_SPARE" Association="Self.FK_REQUESTW_REFERENCE_SPARE">
+      <End Role="Spare" EntitySet="Spare" />
+      <End Role="RequestWork" EntitySet="RequestWork" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REQUESTW_REFERENCE_WORK" Association="Self.FK_REQUESTW_REFERENCE_WORK">
+      <End Role="Work" EntitySet="Work" />
+      <End Role="RequestWork" EntitySet="RequestWork" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SPARE_REFERENCE_SPARETYP" Association="Self.FK_SPARE_REFERENCE_SPARETYP">
+      <End Role="SpareType" EntitySet="SpareType" />
+      <End Role="Spare" EntitySet="Spare" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SPAREPAR_REFERENCE_SPARE" Association="Self.FK_SPAREPAR_REFERENCE_SPARE">
+      <End Role="Spare" EntitySet="Spare" />
+      <End Role="SpareParameter" EntitySet="SpareParameter" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SPARETYP_REFERENCE_TECHNICT" Association="Self.FK_SPARETYP_REFERENCE_TECHNICT">
+      <End Role="TechnicType" EntitySet="TechnicType" />
+      <End Role="SpareType" EntitySet="SpareType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TECHNIC_REFERENCE_MANUFACT" Association="Self.FK_TECHNIC_REFERENCE_MANUFACT">
+      <End Role="Manufacturer" EntitySet="Manufacturer" />
+      <End Role="Technic" EntitySet="Technic" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TECHNIC_REFERENCE_TECHNICT" Association="Self.FK_TECHNIC_REFERENCE_TECHNICT">
+      <End Role="TechnicType" EntitySet="TechnicType" />
+      <End Role="Technic" EntitySet="Technic" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TECHNICP_REFERENCE_PARAMETE" Association="Self.FK_TECHNICP_REFERENCE_PARAMETE">
+      <End Role="Parameter" EntitySet="Parameter" />
+      <End Role="TechnicParameter" EntitySet="TechnicParameter" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TECHNICP_REFERENCE_TECHNIC" Association="Self.FK_TECHNICP_REFERENCE_TECHNIC">
+      <End Role="Technic" EntitySet="Technic" />
+      <End Role="TechnicParameter" EntitySet="TechnicParameter" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
